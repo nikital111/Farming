@@ -95,6 +95,7 @@ contract Farming is IFarming {
     }
 
     // claim rewards in token0 and withdraw token1 from farm
+    // return received rewards
     function claim() external returns (uint256) {
         UserInfo storage user = userInfo[msg.sender];
         require(user.amount > 0, "Nothing to claim");

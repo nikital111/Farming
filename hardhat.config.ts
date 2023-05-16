@@ -1,9 +1,9 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 import "@matterlabs/hardhat-zksync-toolbox";
-
+// --network zkTestnet
 const config: HardhatUserConfig = {
-  // defaultNetwork: "zkTestnet",  --network zkTestnet
+  defaultNetwork: "zkTestnet",
   zksolc: {
     version: "1.3.5",
     compilerSource: "binary",
@@ -26,6 +26,8 @@ const config: HardhatUserConfig = {
       url: "https://zksync2-testnet.zksync.dev",
       ethNetwork: "goerli",
       zksync: true,
+      verifyURL:
+        "https://zksync2-testnet-explorer.zksync.dev/contract_verification",
     },
   },
 };
