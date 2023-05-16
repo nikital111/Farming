@@ -14,15 +14,15 @@ contract Farming is IFarming {
     }
 
     // rewards per second in token0
-    uint256 rewardsPerSec;
+    uint256 public rewardsPerSec;
     // Accumulated tokens per share
-    uint256 accRewardsPerShare;
+    uint256 public accRewardsPerShare;
     // last block.timestamp is rewarded
-    uint256 lastRewards;
+    uint256 public lastRewards;
     // token for rewards
-    address token0;
+    address public token0;
     // token for deposits
-    address token1;
+    address public token1;
 
     // Info of each user
     mapping(address => UserInfo) public userInfo;

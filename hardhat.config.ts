@@ -3,7 +3,7 @@ import "@nomicfoundation/hardhat-toolbox";
 import "@matterlabs/hardhat-zksync-toolbox";
 
 const config: HardhatUserConfig = {
-  defaultNetwork: "zkTestnet",
+  // defaultNetwork: "zkTestnet",  --network zkTestnet
   zksolc: {
     version: "1.3.5",
     compilerSource: "binary",
